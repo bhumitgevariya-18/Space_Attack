@@ -4,14 +4,21 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float controlSpeed = 10f;
+
     [SerializeField] float xClampRange = 5f;
     [SerializeField] float yClampRange = 5f;
-    
+
+    [SerializeField] float controlPitchFactor = 18f;
+    [SerializeField] float controlRollFactor = 20f;
+    [SerializeField] float rotationSpeed = 10f;
+
+
     Vector2 movement;
 
     void Update()
     {
         PlayerShip_Movement();
+        PlayerShip_Rotation();
     }
 
     public void OnMove(InputValue value)
@@ -19,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         movement = value.Get<Vector2>();
     }
 
-    private void PlayerShip_Movement()
+    void PlayerShip_Movement()
     {
         float xOffset = movement.x * controlSpeed * Time.deltaTime;
         float rawXPos = transform.localPosition.x + xOffset;
@@ -31,4 +38,14 @@ public class PlayerMovement : MonoBehaviour
 
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, 0f);
     }
+
+    void PlayerShip_Rotation()
+    {
+        float pitch = -controlPitchFactor * movement.y;
+        float roll = -controlRollFactor * movement.x;
+
+        Quaternion targetRotation = Quaternion.Euler(pitch, 0f, roll);
+        transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRotation, rotationSpeed * Time.deltaTime);
+    }
+
 }
