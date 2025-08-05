@@ -4,12 +4,19 @@ using UnityEngine.InputSystem;
 public class PlayerWeapon : MonoBehaviour
 {
     [SerializeField] GameObject[] lasers;
+    [SerializeField] RectTransform crosshair;
 
     bool isFiring = false;
+
+    void Start()
+    {
+        Cursor.visible = false;
+    }
 
     private void Update()
     {
         LaserFiring();
+        MoveCrosshair();
     }
 
     public void OnFire(InputValue value)
@@ -26,4 +33,8 @@ public class PlayerWeapon : MonoBehaviour
         }
     }
 
+    void MoveCrosshair()
+    {
+        crosshair.position = Input.mousePosition;
+    }
 }
