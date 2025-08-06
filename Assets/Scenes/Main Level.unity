@@ -547,6 +547,8 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -3031381240399477571, guid: 0f1d20e60cad0194aa90a173125ab17e, type: 2}
     value: {fileID: 6613701445820189917}
+  - key: {fileID: -681032993772206725, guid: 0f1d20e60cad0194aa90a173125ab17e, type: 2}
+    value: {fileID: 1564618604}
   m_ExposedReferences:
     m_References:
     - c9cae078db9379f4188c336540d59a17: {fileID: 960164654}
@@ -1153,6 +1155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1564618602}
   - component: {fileID: 1564618603}
+  - component: {fileID: 1564618604}
   m_Layer: 0
   m_Name: Dialogues
   m_TagString: Untagged
@@ -1197,6 +1200,36 @@ MonoBehaviour:
   - Struth!  Looks like the galaxy just got a little more safe.
   - Yeeeehaw!!  You did it!
   dialogueText: {fileID: 960164656}
+--- !u!114 &1564618604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564618601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 22dd3cebf60254340be7f7f4af9f53c3, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1564618603}
+          m_TargetAssemblyTypeName: DialogueLines, Assembly-CSharp
+          m_MethodName: NextDialogueLine
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1819421941
 GameObject:
   m_ObjectHideFlags: 0
