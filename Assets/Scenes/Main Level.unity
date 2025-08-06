@@ -443,7 +443,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &397890576
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1029,18 +1029,26 @@ PlayableDirector:
     value: {fileID: 1564618604}
   m_ExposedReferences:
     m_References:
+    - 5716bc41002498646870e04e02e02a64: {fileID: 397890575}
+    - 3e89c5f0f08288f499425cf41fe5ffbd: {fileID: 397890575}
+    - f79b6cdb16813da4db0f261a2b7583a5: {fileID: 908912071}
     - c9cae078db9379f4188c336540d59a17: {fileID: 960164654}
     - 7698363013a4e3940a521ff11c212fe2: {fileID: 960164654}
     - 0ba1cea3933d9a24099788c1879452bd: {fileID: 960164654}
     - bd09f7badd9d3dd4b94e26a0986e4753: {fileID: 960164654}
     - 85bb624494fffee4893cb6b9511500e1: {fileID: 960164654}
+    - 5d5474efb2a51e540ad353bd819953f9: {fileID: 908912071}
+    - d3ffff7ddcad38142a4ff2f7016fdd88: {fileID: 397890575}
     - 849b74430cb081948b0cb7e36f9a6538: {fileID: 43896620}
     - d312a95de2227c8408dc8cd4ab13594e: {fileID: 2032761637}
     - b04a9fa721073a74896ddf9b142539fd: {fileID: 960164654}
     - ae8c3915187238941ac670eea6fdf8fd: {fileID: 2032761637}
     - a3cd3bd97cf5dcc428e43d83477415fc: {fileID: 960164654}
+    - b3209a65a79cebe40b72276e56c86cd2: {fileID: 908912071}
     - 2de761f95c8f4bf4cbd252c24d61c587: {fileID: 960164654}
+    - c96612a6c2e6efd42af830ebec45c00e: {fileID: 908912071}
     - e7e9f7ea71cf1d34b9b823e72b228796: {fileID: 862040432}
+    - fb17aa934082b814e9ac663f292ba9f1: {fileID: 397890575}
 --- !u!4 &733200437
 Transform:
   m_ObjectHideFlags: 0
@@ -1772,14 +1780,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1810,7 +1818,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 8.662223, y: 0, z: 502.44983, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2442,8 +2450,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2935.3503, y: 12038.257, z: 3143.3032}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2078636282}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
